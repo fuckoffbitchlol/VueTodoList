@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>todoList verison-0.0.1</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <ol type="1">
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+            </ol>
+            <input v-model="message">
+            <button v-on:click="addTask">new</button>
+            <button v-on:click="delTask">del</button>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
